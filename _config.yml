@@ -11,3 +11,5 @@ highlighter: pygments
 # Jekyll Redirect From Plugin for Redirects from Start Bootstrap Old Version
 gems:
   - jekyll-redirect-from
+
+exclude: ['vendor']
