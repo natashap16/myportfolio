@@ -34,7 +34,14 @@ $( document ).ready(function() {
 	//opens portfolio per skill
 	$(".service-item").click(function() {
 		$(".service-item").removeClass("selected");
+		$(".service-item").addClass("notSelected");
+		$(".small-image").show();
+		$(".big-image").hide();
+		$(this).removeClass("notSelected");
 		$(this).addClass("selected");
+		$(this).find(".small-image").hide();
+		$(this).find(".big-image").show();
+		$("#portfolio").show();
 	});
 });
 
