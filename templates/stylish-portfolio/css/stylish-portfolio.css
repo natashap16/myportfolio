@@ -196,6 +196,9 @@ hr.small {
 
 .portfolio-item {
   margin-bottom: 30px; }
+  .portfolio-item img {
+    width: 250px;
+    height: 250px; }
 
 .img-portfolio {
   margin: 0 auto; }

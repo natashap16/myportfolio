@@ -42,6 +42,19 @@ $( document ).ready(function() {
 		$(this).find(".small-image").hide();
 		$(this).find(".big-image").show();
 		$("#portfolio").show();
+		var classArray = this.classList;
+		for(i = 0; i < classArray.length; i++) {
+			console.log("checking item " + i + ": " + classArray[i]);
+			if(classArray[i].indexOf("which") >= 0) {
+				changePortfolioItems(classArray[i]);
+			}
+		}
 	});
+
+	function changePortfolioItems(skillType) {
+		$(".portfolio-thumbnail").hide();
+		skillType = "." + skillType + "-item";
+		$(skillType).show();
+	}
 });
 
