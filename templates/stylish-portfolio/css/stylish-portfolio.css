@@ -151,6 +151,9 @@ hr.small {
   .services h2, .services hr {
     position: relative;
     top: -25px; }
+  .services a {
+    text-decoration: none;
+    color: inherit; }
 
 .service-item {
   margin-bottom: 30px;
@@ -196,14 +199,27 @@ hr.small {
 
 .portfolio-item {
   margin-bottom: 30px; }
-  .portfolio-item img {
-    width: 250px;
-    height: 250px; }
+  .portfolio-item .image-holder {
+    width: 275px;
+    height: 220px;
+    background-color: #e6e6e7;
+    text-align: center;
+    font: 0/0 a; }
+    .portfolio-item .image-holder .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+    .portfolio-item .image-holder img {
+      max-width: 275px;
+      max-height: 220px;
+      vertical-align: middle;
+      text-align: center;
+      display: inline-block; }
 
 .img-portfolio {
   margin: 0 auto; }
 
-.img-portfolio:hover {
+.image-holder:hover {
   opacity: 0.8; }
 
 /* Call to Action */

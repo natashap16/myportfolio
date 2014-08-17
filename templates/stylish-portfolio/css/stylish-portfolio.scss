@@ -7,6 +7,10 @@
  $light_red:#dc5f62;
 
  $gray2:#242324;
+ $gray3:#3B3A3B;
+ $gray4:#525252;
+ $gray5:#7A797A;
+ $gray6:#ADADAD;
  $gray7:#e6e6e7;
  $gray8:#f5f5f7;
 
@@ -193,6 +197,11 @@ hr.small {
         position:relative;
         top:-25px;
     }
+
+    a {
+       text-decoration:none; 
+       color:inherit;
+    }
 }
 
 .service-item {
@@ -254,9 +263,27 @@ hr.small {
 .portfolio-item {
     margin-bottom: 30px;
 
-    img {
-        width:250px;
-        height:250px;
+    .image-holder {
+        width:275px;
+        height:220px;
+        background-color:$gray7;
+        text-align:center;
+        font: 0/0 a;
+
+        .helper {
+              display: inline-block;
+              height: 100%;
+              vertical-align: middle;
+
+        }
+
+        img {
+            max-width:275px;
+            max-height:220px; 
+            vertical-align:middle; 
+            text-align:center;
+            display: inline-block;
+        }
     }
 }
 
@@ -264,7 +291,7 @@ hr.small {
     margin: 0 auto;
 }
 
-.img-portfolio:hover {
+.image-holder:hover {
     opacity: 0.8;
 }
 
