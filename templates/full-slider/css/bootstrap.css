@@ -5737,7 +5737,7 @@ button.close {
   display: block;
 }
 .carousel-inner > .active {
-  left: 0;
+  left:15%;
 }
 .carousel-inner > .next,
 .carousel-inner > .prev {
@@ -5876,6 +5876,10 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
+
+.carousel-caption p {
+  padding:0px 10px;
+}
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
@@ -5897,7 +5901,7 @@ button.close {
   .carousel-caption {
     right: 20%;
     left: 20%;
-    padding-bottom: 30px;
+    padding: 0px 10px 30px 10px;
   }
   .carousel-indicators {
     bottom: 20px;

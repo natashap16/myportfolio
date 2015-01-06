@@ -3,34 +3,38 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
 html,
 body {
-    height: 100%;
-}
+  height: 100%; }
 
 .carousel,
 .item,
 .active {
-    height: 100%;
-}
+  height: 100%; }
 
 .carousel-inner {
-    height: 100%;
-}
+  height: 100%; }
+  .carousel-inner .carousel-caption {
+    color: white;
+    background-color: rgba(27, 29, 29, 0.75);
+    border-radius: 15px;
+    padding: 0px 10px 30px 10px; }
 
 /* Background images are set within the HTML using inline CSS, not here */
-
 .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  horizontal-align: center;
+  background-position: center;
+  -webkit-background-size: auto 75%;
+  -moz-background-size: auto 75%;
+  background-size: auto 75%;
+  background-repeat: no-repeat;
+  -o-background-size: auto 75%; }
+
+.item {
+  horizontal-align: center; }
 
 footer {
-    margin: 50px 0;
-}
+  margin: 50px 0; }
