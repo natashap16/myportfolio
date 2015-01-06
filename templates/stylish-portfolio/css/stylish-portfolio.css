@@ -3,6 +3,8 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+/*darkest*/
+/*lightest*/
 /* Global Styles */
 html,
 body {
@@ -139,18 +141,20 @@ hr.small {
 
 /* About */
 .about {
-  padding: 40px 0px 20px 0px; }
+  padding: 40px 0px 0px 0px; }
 
 /* Services */
 .services {
-  padding: 50px 0px 0px 0px;
-  background-color: #dc5f62;
-  z-index: 50; }
+  padding: 20px 0px 0px 0px;
+  z-index: 50;
+  background-color: white;
+  color: black; }
   .services img {
     border: 3px solid white; }
   .services h2, .services hr {
     position: relative;
-    top: -25px; }
+    top: -25px;
+    color: #dc5f62; }
   .services a {
     text-decoration: none;
     color: inherit; }
@@ -163,7 +167,11 @@ hr.small {
     padding: 15px 9px 20px 9px;
     top: -15px;
     color: black;
-    width: 34%; }
+    width: 34%;
+    border: 2px solid #3b3a3b;
+    border-bottom: none;
+    z-index: 10000;
+    margin-bottom: 33px; }
   .service-item.notSelected {
     width: 22%; }
   .service-item .big-image {
@@ -188,11 +196,12 @@ hr.small {
 
 /* Portfolio */
 .portfolio {
-  padding: 50px 0;
+  padding: 20px 0;
   position: relative;
   top: -50px;
   z-index: 100;
-  background-color: #f5f5f7; }
+  background-color: #f5f5f7;
+  border: 2px solid #3b3a3b; }
   .portfolio h2 {
     position: relative;
     top: -25px; }
