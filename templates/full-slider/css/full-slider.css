@@ -58,3 +58,13 @@ footer {
 
 .indicate-scrolling:hover {
   opacity: 1; }
+
+table, th, td {
+  border: 1px solid #3b3a3b;
+  border-collapse: collapse; }
+
+th, td {
+  padding: 10px; }
+
+th {
+  background-color: #e6e6e7; }

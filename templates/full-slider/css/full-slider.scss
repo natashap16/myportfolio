@@ -82,3 +82,16 @@ footer {
 .indicate-scrolling:hover {
     opacity:1;
 }
+
+table, th, td {
+    border: 1px solid  $gray3;
+    border-collapse:collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+   background-color:  $gray7;
+}
