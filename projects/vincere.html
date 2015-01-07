@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="../templates/full-slider/css/full-slider.css" rel="stylesheet">
+    <link href="templates/stylish-portfolio/css/stylish-portfolio.css" rel="stylesheet"
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,6 +33,7 @@
     <script src="../templates/stylish-portfolio/js/jquery-1.11.0.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../templates/stylish-portfolio/js/bootstrap.min.js"></script>
+    <script src="../projects/projects.js"></script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -65,6 +67,12 @@
         <!-- /.container -->
     </nav>
 
+    <div class="indicate-scrolling">
+        <a href="#vincere-summary">
+            <img src="../assets/img/arrow-down.png">
+        </a>
+    </div>
+
         <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -86,7 +94,7 @@
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url(../assets/img/vincere/vincere-1.png);"></div>
                 <div class="carousel-caption">
-                    <h2>Homepage</h2>
+                    <h2>Website walkthrough: Homepage</h2>
                     <p>We designed a site to connect survivors of sexual assault. Click "How it works" to proceed.</p>
                 </div>
             </div>
@@ -163,8 +171,52 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-        <div>
-            <p>blahsdhgslkd</p>
+        <section class="project-summary" id="vincere-summary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-1">
+                            <br/>
+                            <br/>
+                            <h2>Summary</h2>
+                            <p><span class="summary-header">The challenge:</span> Design a new product to facilitate social communication online</p>
+                            <p><span class="summary-header">What we did:</span> Needfinding, interactive prototypes, iterative rounds of prototyping and testing (wizard-of-oz testing, user studies, and surveys)</p>
+                            <p><span class="summary-header">The results:</span> A site to connect victims of sexual assault in a low-stress environment (vincere.herokuapp.com)</p>
+                            <p><span class="summary-header">Awards:</span> Class honorable mention</p>
+                            <p><span class="summary-header">Duration:</span> 8 weeks</p>
+                            <p><span class="summary-header">Team:</span> 3 students</p>
+                            <p><span class="summary-header">When:</span> Spring 2014 (Stanford CS247 class)</p>
+                    </div>
+                    <div class="col-lg-4">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/oIDyZDA4EVw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-1">
+                            <br/>
+                            <br/>
+                            <h2>Design Process</h2>
+                            <h3>Version 1</h3>
+                            <p>Our original concept focused on finding just the right person to talk to. To do so, we had the idea that:</p>
+                            <ul>
+                                <li><span class="summary-header">Tell:</span> Survivors would record and post the story of their experience.</li>
+                                <li><span class="summary-header">Listen:</span> Survivors would listen to others' shared stories and reach out to them via the website to set up a time to talk 1:1.</li>
+                                <li><span class="summary-header">Connect:</span> Two survivors would meet in an online, collaborative drawing space with an audiostream to talk.</li>
+                            </ul>
+                    </div>
+                    <div class="col-lg-4">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <img src="../assets/img/vincere/vincere-storyboard-early.jpg">
+                        </div>
+                    </div> 
+                </div>
+            </div>
         </div>
 
     </header>

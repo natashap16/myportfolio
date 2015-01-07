@@ -4,6 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /*darkest*/
+ $gray2:#242324;
+ $gray3:#3B3A3B;
+ $gray4:#525252;
+ $gray5:#7A797A;
+ $gray6:#ADADAD;
+ $gray7:#e6e6e7;
+ $gray8:#f5f5f7;
+ /*lightest*/
+
 html,
 body {
     height: 100%;
@@ -47,4 +57,28 @@ body {
 
 footer {
     margin: 50px 0;
+}
+
+.project-summary {
+    
+    border: 1px solid $gray2;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+    
+    .summary-header {
+        font-weight: bold;
+    }
+}
+
+.indicate-scrolling {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:1000;
+    opacity:0.5;
+}
+
+.indicate-scrolling:hover {
+    opacity:1;
 }

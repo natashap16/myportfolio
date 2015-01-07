@@ -3,6 +3,8 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+/*darkest*/
+/*lightest*/
 html,
 body {
   height: 100%; }
@@ -38,3 +40,21 @@ body {
 
 footer {
   margin: 50px 0; }
+
+.project-summary {
+  border: 1px solid #242324;
+  border-left: none;
+  border-right: none;
+  border-bottom: none; }
+  .project-summary .summary-header {
+    font-weight: bold; }
+
+.indicate-scrolling {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  opacity: 0.5; }
+
+.indicate-scrolling:hover {
+  opacity: 1; }
