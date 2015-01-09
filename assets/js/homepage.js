@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
-
+	//image flipper
+	$('#myFlipper').flipper();
 
 	// Closes the sidebar menu
 	$("#menu-close").click(function(e) {
