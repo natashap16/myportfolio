@@ -1,5 +1,21 @@
 $( document ).ready(function() {
 
+	//Handlebars template
+	var source   = $("#project-small-template").html();
+ 	var template = Handlebars.compile(source);
+  	var data = { projects: [
+      {url: "/projects/vincere.html", workCategory:"which-uxresearch-item which-coding-item which-uxdesign-item", imageURL: "assets/img/project_thumbnails/vincere.png", styleInfo:"position:relative; top:10px"},
+      {url:"/projects/expressway.html", workCategory:"which-uxresearch-item which-needfinding-item which-uxdesign-item", imageURL:"assets/img/project_thumbnails/Expressway.png"},
+      {url:"#", workCategory:"which-needfinding-item", imageURL:"assets/img/project_thumbnails/mr-sushi.jpg"},
+      {url:"#", workCategory:"which-needfinding-item which-uxresearch-item", imageURL:"assets/img/project_thumbnails/toadette_stool.jpg"},
+      {url:"/projects/socialize.html", workCategory:"which-coding-item which-uxdesign-item", imageURL:"assets/img/project_thumbnails/Socialize-upcoming-events.jpg"},
+      {url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/time-lapse-altschool.jpg"},
+      {url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/usability-testing-google.jpg"},
+      {url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/teacher-card-sort.png"},
+      {url:"#", workCategory:"which-uxdesign-item", imageURL:"assets/img/project_thumbnails/pen.jpg"}
+    ]};
+  	$("#content-placeholder").html(template(data));
+
 	//image flipper
 	$('#myFlipper').flipper();
 

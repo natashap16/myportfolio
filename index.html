@@ -41,6 +41,22 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
     <script src="assets/js/jquery.flipper.js"></script>
+    <script type="text/javascript" src="assets/js/handlebars-v2.0.0.js"></script>
+    <script id="project-small-template" type="text/x-handlebars-template">
+        {{#projects}}
+        <div class="col-md-4 {{workCategory}} portfolio-thumbnail">
+            <div class="portfolio-item">
+                <a href="{{url}}">
+                    <div class="image-holder">
+                        <span class="helper">
+                            <img class="img-portfolio img-responsive" src="{{imageURL}}" style="{{styleInfo}}" />
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {{/projects}}
+    </script>
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -149,108 +165,8 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <hr class="small">
-                    <div class="row">
-                         <div class="col-md-4 which-coding-item which-uxresearch-item which-uxdesign-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="/projects/vincere.html">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/vincere.png" height="182" style="position:relative; top:10px">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                         <div class="col-md-4 which-uxresearch-item which-needfinding-item which-uxdesign-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/Expressway.png">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    
-                        <div class="col-md-4 which-needfinding-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/mr-sushi.jpg">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 which-needfinding-item which-uxresearch-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/toadette_stool.jpg">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 which-coding-item which-uxdesign-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/Socialize-upcoming-events.jpg">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 which-uxresearch-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/time-lapse-altschool.jpg">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="row" id="content-placeholder">
 
-                        <div class="col-md-4 which-uxresearch-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/usability-testing-google.jpg">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 which-uxresearch-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/teacher-card-sort.png">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                         <div class="col-md-4 which-uxdesign-item portfolio-thumbnail">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <div class="image-holder">
-                                        <span class="helper">
-                                            <img class="img-portfolio img-responsive" src="assets/img/project_thumbnails/pen.jpg">
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     <!-- /.row (nested) -->
                     <a href="#" class="btn btn-dark">View More Items</a>
@@ -264,7 +180,7 @@
 
     <!-- testing jquery flip -->
     <section id="myFlipper">
-
+  
             <div class="front">
                 <section class="front__content"> 
                     <img src="assets/img/expressway/presentation.jpg" /> 
@@ -275,7 +191,7 @@
                     <img src="assets/img/expressway/presentation2.jpg" />
                 </section>
             </div>
-
+    
     </section>
 
     <!-- Call to Action -->
