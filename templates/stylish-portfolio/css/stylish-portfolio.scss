@@ -274,10 +274,13 @@ hr.small {
 .portfolio-item {
     margin-bottom: 30px;
 
+    .image-holder-background {
+        background-color:$gray7;
+    }
+
     .image-holder {
         width:275px;
         height:220px;
-        background-color:$gray7;
         text-align:center;
         font: 0/0 a;
 

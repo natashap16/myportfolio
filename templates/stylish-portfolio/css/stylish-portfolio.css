@@ -208,10 +208,11 @@ hr.small {
 
 .portfolio-item {
   margin-bottom: 30px; }
+  .portfolio-item .image-holder-background {
+    background-color: #e6e6e7; }
   .portfolio-item .image-holder {
     width: 275px;
     height: 220px;
-    background-color: #e6e6e7;
     text-align: center;
     font: 0/0 a; }
     .portfolio-item .image-holder .helper {

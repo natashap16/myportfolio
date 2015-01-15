@@ -45,15 +45,31 @@
     <script id="project-small-template" type="text/x-handlebars-template">
         {{#projects}}
         <div class="col-md-4 {{workCategory}} portfolio-thumbnail">
+            
             <div class="portfolio-item">
                 <a href="{{url}}">
-                    <div class="image-holder">
-                        <span class="helper">
-                            <img class="img-portfolio img-responsive" src="{{imageURL}}" style="{{styleInfo}}" />
-                        </span>
-                    </div>
+                    
+                        <section id="{{flipperID}}">
+                            <section class="front__content"> 
+                                <div class="image-holder image-holder-background">
+                                    <span class="helper">
+                                        <img class="img-portfolio img-responsive" src="{{imageURL}}" style="{{styleInfo}}" />
+                                    </span>
+                                </div>
+                            </section>
+                            <section class="back__content">
+                               
+                                    <div class="image-holder-background" style="color:black; font-size:12px; padding:10px; height:100%">
+                                        <h4>{{title}}</h4>
+                                        <p>{{description}}<p>
+                                    </div>
+                            
+                            </section>
+                        </section>
+                    
                 </a>
             </div>
+
         </div>
         {{/projects}}
     </script>
@@ -178,21 +194,6 @@
         <!-- /.container -->
     </section>
 
-    <!-- testing jquery flip -->
-    <section id="myFlipper">
-  
-            <div class="front">
-                <section class="front__content"> 
-                    <img src="assets/img/expressway/presentation.jpg" /> 
-                </section>
-            </div>
-            <div class="back">
-                <section class="back__content">
-                    <img src="assets/img/expressway/presentation2.jpg" />
-                </section>
-            </div>
-    
-    </section>
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
