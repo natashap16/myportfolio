@@ -13,7 +13,7 @@ $( document ).ready(function() {
       {title:"Teacher Time Study at AltSchool", flipperID:"myFlipper6",url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/time-lapse-altschool.jpg", description:"Observed individual and group classroom activities to explain to broader team what goes on in classroom."},
       {title:"Usability Testing at Google", flipperID:"myFlipper7",url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/usability-testing-google.jpg", description:"Designed, recruited for, and conducted usability testing for select Google products."},
       {title:"Teacher Planning Study", flipperID:"myFlipper8",url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/teacher-card-sort.png", description:"Interviewed five teachers. Analyzed to understand and make recommendations for the Personal Learning Plan (PLP), Learner Profile (LP), and general planning."},
-      {title:"A Pen in the Style of Ross Lovegrove", flipperID:"myFlipper9",url:"#", workCategory:"which-uxdesign-item", imageURL:"assets/img/project_thumbnails/pen.jpg", description:"Industrial design project to design a pen in the style of a designer."}
+      {title:"A Pen in the Style of Ross Lovegrove", flipperID:"myFlipper9",url:"/projects/6-pen.html", workCategory:"which-uxdesign-item", imageURL:"assets/img/project_thumbnails/pen.jpg", description:"Industrial design project to design a pen in the style of a designer."}
     ]};
   	$("#content-placeholder").html(template(data));
 
