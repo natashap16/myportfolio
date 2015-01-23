@@ -1,0 +1,19 @@
+$blue-guy-blue:#2caad8;
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background: url(../../assets/img/personas/colored-figures.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#personas-title {
+	background-color:$blue-guy-blue;
+}
