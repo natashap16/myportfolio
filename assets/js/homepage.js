@@ -63,12 +63,19 @@ $( document ).ready(function() {
 	//opens portfolio per skill
 	$(".service-item").click(function() {
 		$(".service-item").removeClass("selected");
+		$(".service-item").removeClass("col-md-6");
+		$(".service-item").removeClass("col-md-3");
+		$(".service-item").addClass("col-md-2");
 		$(".service-item").addClass("notSelected");
 		$(".small-image").show();
+		$(".service-desc").hide();
 		$(".big-image").hide();
 		$(this).removeClass("notSelected");
+		$(this).removeClass("col-md-2");
 		$(this).addClass("selected");
+		$(this).addClass("col-md-6")
 		$(this).find(".small-image").hide();
+		$(this).find(".service-desc").show();
 		$(this).find(".big-image").show();
 		$("#portfolio").show();
 		var classArray = this.classList;

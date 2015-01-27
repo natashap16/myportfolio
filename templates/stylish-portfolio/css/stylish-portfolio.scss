@@ -196,25 +196,29 @@ hr.small {
 
 .service-item {
     margin-bottom: 30px;
-    width:25%;
+
 
     &.selected {
         background-color:$gray8;
         padding:15px 9px 20px 9px;
         top:-15px;
         color:black;
-        width:34%;
+
         border:2px solid $gray3;
         border-bottom: none;
         z-index:10000;
         margin-bottom:33px;
     }
-    &.notSelected {
-        width:22%;
-    }
+
 
     .big-image {
         display:none;
+    }
+
+    &.notSelected {
+        .small-image {
+            width:100%;
+        }
     }
 }
 

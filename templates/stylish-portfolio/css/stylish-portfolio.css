@@ -145,22 +145,20 @@ hr.small {
     color: inherit; }
 
 .service-item {
-  margin-bottom: 30px;
-  width: 25%; }
+  margin-bottom: 30px; }
   .service-item.selected {
     background-color: #f5f5f7;
     padding: 15px 9px 20px 9px;
     top: -15px;
     color: black;
-    width: 34%;
     border: 2px solid #3B3A3B;
     border-bottom: none;
     z-index: 10000;
     margin-bottom: 33px; }
-  .service-item.notSelected {
-    width: 22%; }
   .service-item .big-image {
     display: none; }
+  .service-item.notSelected .small-image {
+    width: 100%; }
 
 .services .tagline {
   font-style: italic;
