@@ -158,12 +158,19 @@ hr.small {
   .service-item .big-image {
     display: none; }
   .service-item.notSelected .small-image {
-    width: 100%; }
+    max-width: 100%; }
 
 .services .tagline {
   font-style: italic;
   color: #242324;
   font-size: 80%; }
+
+/* Mobile services section */
+#other-services-mobile {
+  padding-bottom: 10px;
+  display: none; }
+  #other-services-mobile ul {
+    text-align: left; }
 
 /* Callout */
 .callout {

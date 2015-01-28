@@ -217,7 +217,7 @@ hr.small {
 
     &.notSelected {
         .small-image {
-            width:100%;
+            max-width:100%;
         }
     }
 }
@@ -226,6 +226,18 @@ hr.small {
     font-style:italic;
     color:$gray2;
     font-size:80%;
+}
+
+/* Mobile services section */
+
+#other-services-mobile {
+    padding-bottom:10px;
+    display:none;
+
+  ul {
+    text-align:left;
+  }
+
 }
 
 /* Callout */

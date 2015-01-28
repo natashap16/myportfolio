@@ -62,7 +62,48 @@ $( document ).ready(function() {
 
 	//opens portfolio per skill
 	$(".service-item").click(function() {
+		putBackToDefaultState();
+		var newlySelectedServiceItem = $(this);
+		selectNewService(newlySelectedServiceItem);
+		var classArray = this.classList;
+		changePortfolioItems(classArray.item(2));
+		hideMobileServicePicked(classArray.item(2));
+			
+	});
+
+	$(".mobile-services").click(function() {
+		putBackToDefaultState();
+
+		var serviceItem = "";
+		var classArray = this.classList;
+		serviceItem = classArray.item(1);
+		var length = serviceItem.length;
+		serviceItem = serviceItem.substring(0, length - 7);
+		serviceItemClass = "." + serviceItem;
+		var picked = $("#services").find(serviceItemClass);
+
+		selectNewService(picked);
+		
+		changePortfolioItems(serviceItem);
+		hideMobileServicePicked(serviceItem);
+	});
+
+	function selectNewService(serviceSelected) {
+		$(serviceSelected).removeClass("notSelected");
+		$(serviceSelected).removeClass("col-md-2");
+		$(serviceSelected).addClass("selected");
+		$(serviceSelected).addClass("col-md-6")
+		$(serviceSelected).find(".small-image").hide();
+		$(serviceSelected).find(".service-desc").show();
+		$(serviceSelected).find(".big-image").show();
+		$("#portfolio").show();
+		
+	}
+
+	function putBackToDefaultState() {
 		$(".service-item").removeClass("selected");
+		$("#other-services-mobile").show();
+		$(".mobile-services").show();
 		$(".service-item").removeClass("col-md-6");
 		$(".service-item").removeClass("col-md-3");
 		$(".service-item").addClass("col-md-2");
@@ -70,22 +111,12 @@ $( document ).ready(function() {
 		$(".small-image").show();
 		$(".service-desc").hide();
 		$(".big-image").hide();
-		$(this).removeClass("notSelected");
-		$(this).removeClass("col-md-2");
-		$(this).addClass("selected");
-		$(this).addClass("col-md-6")
-		$(this).find(".small-image").hide();
-		$(this).find(".service-desc").show();
-		$(this).find(".big-image").show();
-		$("#portfolio").show();
-		var classArray = this.classList;
-		for(i = 0; i < classArray.length; i++) {
-			console.log("checking item " + i + ": " + classArray[i]);
-			if(classArray[i].indexOf("which") >= 0) {
-				changePortfolioItems(classArray[i]);
-			}
-		}
-	});
+	}
+
+	function hideMobileServicePicked(skillType) {
+		skillType = "." + skillType + "-mobile";
+		$(skillType).hide();
+	}
 
 	function changePortfolioItems(skillType) {
 		$(".portfolio-thumbnail").hide();
