@@ -127,15 +127,13 @@ $( document ).ready(function() {
 				    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 				}
 			};
+			if(isMobile.any()) {
+				$("#other-services-mobile").show();
+				$(".mobile-services").show();
+				$(".service-item").hide();
+			}
 			console.log("now ismobile is set1");
-		} else if(isMobile.any()) {
-			$("#other-services-mobile").show();
-			$(".mobile-services").show();
-			$(".service-item").hide();
-			console.log("looook");
-		} else {
-			console.log("just not mobile");
-		}
+		} 
 
 		$(".service-item").removeClass("selected");
 		$(".service-item").removeClass("col-md-6");
