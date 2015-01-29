@@ -100,13 +100,11 @@ $( document ).ready(function() {
 		$(serviceSelected).find(".service-desc").show();
 		$(serviceSelected).find(".big-image").show();
 		$("#portfolio").show();
-		if(!isMobile) {
-			if(isMobile.any()) {
+
 				$('html, body').animate({
     				scrollTop: $("#services").offset().top
 				}, 1000);
-			}
-		}
+
 		
 	}
 
