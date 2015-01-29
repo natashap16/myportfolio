@@ -2,6 +2,7 @@ $( document ).ready(function() {
 
 	//Handlebars template
 	var source   = $("#project-small-template").html();
+	var isMobile = null;
  	var template = Handlebars.compile(source);
   	var data = { projects: [
       {title:"Vincere", flipperID: "myFlipper1", url: "/projects/1-vincere.html", workCategory:"which-uxresearch-item which-coding-item which-uxdesign-item", imageURL: "assets/img/project_thumbnails/vincere.png", styleInfo:"position:relative; top:10px", description:"A site designed to anonymously connect survivors of sexual assault. They would connect over an audio stream and a shared drawing canvas, so they could doodle and create something together while they talk."},
@@ -63,6 +64,7 @@ $( document ).ready(function() {
 	//opens portfolio per skill
 	$(".service-item").click(function() {
 		putBackToDefaultState();
+
 		var newlySelectedServiceItem = $(this);
 		selectNewService(newlySelectedServiceItem);
 		var classArray = this.classList;
@@ -92,6 +94,7 @@ $( document ).ready(function() {
 		$(serviceSelected).removeClass("notSelected");
 		$(serviceSelected).removeClass("col-md-2");
 		$(serviceSelected).addClass("selected");
+		$(serviceSelected).show();
 		$(serviceSelected).addClass("col-md-6")
 		$(serviceSelected).find(".small-image").hide();
 		$(serviceSelected).find(".service-desc").show();
@@ -101,9 +104,40 @@ $( document ).ready(function() {
 	}
 
 	function putBackToDefaultState() {
+
+		if (isMobile === null) {
+			console.log("not set yet");
+			isMobile = {
+				Android: function() {
+				    return navigator.userAgent.match(/Android/i);
+				},
+				BlackBerry: function() {
+				    return navigator.userAgent.match(/BlackBerry/i);
+				},
+				iOS: function() {
+				    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+				},
+				Opera: function() {
+				    return navigator.userAgent.match(/Opera Mini/i);
+				},
+				Windows: function() {
+				    return navigator.userAgent.match(/IEMobile/i);
+				},
+				any: function() {
+				    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+				}
+			};
+			console.log("now ismobile is set1");
+		} else if(isMobile.any()) {
+			$("#other-services-mobile").show();
+			$(".mobile-services").show();
+			$(".service-item").hide();
+			console.log("looook");
+		} else {
+			console.log("just not mobile");
+		}
+
 		$(".service-item").removeClass("selected");
-		$("#other-services-mobile").show();
-		$(".mobile-services").show();
 		$(".service-item").removeClass("col-md-6");
 		$(".service-item").removeClass("col-md-3");
 		$(".service-item").addClass("col-md-2");
