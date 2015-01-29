@@ -104,7 +104,7 @@ $( document ).ready(function() {
 			if(isMobile.any()) {
 				$('html, body').animate({
     				scrollTop: $("#services").offset().top
-				}, 500);
+				}, 1000);
 			}
 		}
 		
@@ -142,6 +142,7 @@ $( document ).ready(function() {
 			console.log("now ismobile is set1");
 		} else if (isMobile.any()) {
 			$(".service-item").hide();
+			$(".mobile-services").show();
 		}
 
 		$(".service-item").removeClass("selected");
