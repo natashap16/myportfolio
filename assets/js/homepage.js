@@ -94,19 +94,19 @@ $( document ).ready(function() {
 		$(serviceSelected).removeClass("notSelected");
 		$(serviceSelected).removeClass("col-md-2");
 		$(serviceSelected).addClass("selected");
-		if(!isMobile) {
-			if(isMobile.any()) {
-				$(serviceSelected).show();
-				$('html, body').animate({
-    				scrollTop: $("#services").offset().top
-				}, 500);
-			}
-		}
+		$(serviceSelected).show();
 		$(serviceSelected).addClass("col-md-6")
 		$(serviceSelected).find(".small-image").hide();
 		$(serviceSelected).find(".service-desc").show();
 		$(serviceSelected).find(".big-image").show();
 		$("#portfolio").show();
+		if(!isMobile) {
+			if(isMobile.any()) {
+				$('html, body').animate({
+    				scrollTop: $("#services").offset().top
+				}, 500);
+			}
+		}
 		
 	}
 
