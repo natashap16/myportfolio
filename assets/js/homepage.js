@@ -94,7 +94,14 @@ $( document ).ready(function() {
 		$(serviceSelected).removeClass("notSelected");
 		$(serviceSelected).removeClass("col-md-2");
 		$(serviceSelected).addClass("selected");
-		$(serviceSelected).show();
+		if(!isMobile) {
+			if(isMobile.any()) {
+				$(serviceSelected).show();
+				$('html, body').animate({
+    				scrollTop: $("#services").offset().top
+				}, 500);
+			}
+		}
 		$(serviceSelected).addClass("col-md-6")
 		$(serviceSelected).find(".small-image").hide();
 		$(serviceSelected).find(".service-desc").show();
