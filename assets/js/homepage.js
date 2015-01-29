@@ -140,7 +140,9 @@ $( document ).ready(function() {
 				$(".service-item").hide();
 			}
 			console.log("now ismobile is set1");
-		} 
+		} else if (isMobile.any()) {
+			$(".service-item").hide();
+		}
 
 		$(".service-item").removeClass("selected");
 		$(".service-item").removeClass("col-md-6");
