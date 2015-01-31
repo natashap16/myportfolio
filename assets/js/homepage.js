@@ -15,7 +15,7 @@ $( document ).ready(function() {
       {title:"Usability Testing at Google", flipperID:"myFlipper7",url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/usability-testing-google.jpg", description:"Designed, recruited for, and conducted usability testing for select Google products."},
       {title:"Teacher Planning Study", flipperID:"myFlipper8",url:"#", workCategory:"which-uxresearch-item", imageURL:"assets/img/project_thumbnails/teacher-card-sort.png", description:"Interviewed five teachers. Analyzed to understand and make recommendations for the Personal Learning Plan (PLP), Learner Profile (LP), and general planning."},
       {title:"A Pen in the Style of Ross Lovegrove", flipperID:"myFlipper9",url:"/projects/6-pen.html", workCategory:"which-uxdesign-item", imageURL:"assets/img/project_thumbnails/pen.jpg", description:"Industrial design project to design a pen in the style of a designer."},
-      {title:"Who are your students?", flipperID:"myFlipper11", url:"/projects/8-personas.html", workCategory:"which-needfinding-item", imageURL:"assets/img/project_thumbnails/personas-thumbnail.png", description:"Consulting project with a foregin language school for adults in NYC. I send out a survey and interviewed past, current, and non-students to understand what types of students attended Fluent City. At the end, I also worked with the school to understand what sorts of next steps could be taken with these personas, as it related to product offerings."},
+      {title:"Who are your students?", flipperID:"myFlipper11", url:"/projects/8-personas.html", workCategory:"which-needfinding-item", imageURL:"assets/img/project_thumbnails/personas-thumbnail.png", description:"Consulting project with a foregin language school for adults in NYC. Survey, open-ended interviews, and product recommenations."},
     ]};
   	$("#content-placeholder").html(template(data));
 
@@ -103,7 +103,7 @@ $( document ).ready(function() {
 
 				$('html, body').animate({
     				scrollTop: $("#services").offset().top
-				}, 1000);
+				}, 100);
 
 		
 	}

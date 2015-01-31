@@ -13,4 +13,11 @@
 #personas-title {
   background-color: #2caad8; }
 
+/*General*/
+.personas-process-pics {
+  max-width: 468px; }
+
+.personas-process-pics-tall {
+  max-height: 600px; }
+
 /*# sourceMappingURL=personas.css.map */

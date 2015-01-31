@@ -25,6 +25,11 @@ body {
   font-size: 4.5em;
   font-weight: 700; }
 
+.postscript {
+  font-style: italic;
+  color: #ADADAD;
+  font-size: 0.7eom; }
+
 /* Custom Button Styles */
 .btn-dark {
   border-radius: 0;
