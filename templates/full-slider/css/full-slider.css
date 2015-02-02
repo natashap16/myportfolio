@@ -46,8 +46,9 @@ footer {
   border-left: none;
   border-right: none;
   border-bottom: none; }
-  .project-summary .summary-header {
-    font-weight: bold; }
+
+.summary-header {
+  font-weight: bold; }
 
 .indicate-scrolling {
   position: fixed;
@@ -60,7 +61,7 @@ footer {
   opacity: 1; }
 
 table, th, td {
-  border: 1px solid #3b3a3b;
+  border: 1px solid #3B3A3B;
   border-collapse: collapse; }
 
 th, td {
