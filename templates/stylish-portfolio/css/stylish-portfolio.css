@@ -205,18 +205,18 @@ hr.small {
   margin-bottom: 30px; }
   .portfolio-item .learn-more-button-background {
     background-color: white;
-    border-radius: 16px;
-    height: 32px;
-    width: 32px;
+    border-radius: 13px;
+    height: 26px;
+    width: 26px;
     position: absolute;
     bottom: 5px;
     right: 5px; }
   .portfolio-item .learn-more-button2 {
-    color: #b62b2e;
-    font-size: 33px;
+    color: #242324;
+    font-size: 26px;
     position: absolute;
     bottom: 4px;
-    right: 6px; }
+    right: 7px; }
   .portfolio-item .image-holder-background {
     background-color: #e6e6e7; }
   .portfolio-item .image-holder {
