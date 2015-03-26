@@ -129,6 +129,9 @@ hr.small {
 .toggle {
   margin: 5px 5px 0 0; }
 
+.highlight-nav {
+  color: #f5f5f7 !important; }
+
 /* About */
 .about {
   padding: 40px 0px 0px 0px; }
