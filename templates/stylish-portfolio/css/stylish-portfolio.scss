@@ -5,6 +5,7 @@
  */
 
  $light_red:#dc5f62;
+ $dark_red:#b62b2e;
 
 /*darkest*/
  $gray2:#242324;
@@ -279,6 +280,24 @@ hr.small {
 
 .portfolio-item {
     margin-bottom: 30px;
+
+    .learn-more-button-background {
+        background-color:white;
+        border-radius:16px;
+        height:32px;
+        width:32px;
+        position:absolute;
+        bottom:5px;
+        right:5px;
+    }
+
+    .learn-more-button2 {
+        color:$dark-red;
+        font-size:33px;
+        position:absolute;
+        bottom:4px;
+        right:6px;
+    }
 
     .image-holder-background {
         background-color:$gray7;
