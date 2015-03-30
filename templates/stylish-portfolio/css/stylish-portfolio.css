@@ -161,7 +161,7 @@ hr.small {
     color: black;
     border: 2px solid #3B3A3B;
     border-bottom: none;
-    z-index: 10000;
+    z-index: 5000;
     margin-bottom: 33px; }
   .service-item .big-image {
     display: none; }
