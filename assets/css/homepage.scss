@@ -1,6 +1,7 @@
 /* Header */
 
  $light_red:#dc5f62;
+ $dark_red:#b62b2e;
 
 /*darkest*/
  $gray2:#242324;
@@ -26,4 +27,25 @@
 
 #top .btn {
     background-color:#b62b2e;
+}
+
+.call-to-action {
+    display: table;
+    position: relative;
+    width: 100%;
+    background: url(../../assets/img/contact-section-bg.png) no-repeat center center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+
+    h3 {
+        color:$dark_red;
+    } 
+
+    .btn {
+        background-color:white;
+        border:1px solid $dark_red;
+        color:black;
+    }
 }

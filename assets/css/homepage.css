@@ -15,4 +15,20 @@
 #top .btn {
   background-color: #b62b2e; }
 
+.call-to-action {
+  display: table;
+  position: relative;
+  width: 100%;
+  background: url(../../assets/img/contact-section-bg.png) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .call-to-action h3 {
+    color: #b62b2e; }
+  .call-to-action .btn {
+    background-color: white;
+    border: 1px solid #b62b2e;
+    color: black; }
+
 /*# sourceMappingURL=homepage.css.map */
