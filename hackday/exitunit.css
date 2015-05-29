@@ -1,0 +1,68 @@
+/*darkest*/
+/*lightest*/
+a {
+  border: black;
+  color: #ADADAD; }
+
+#grey-box {
+  width: 100%;
+  height: 25px;
+  background-color: #ADADAD;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 2px; }
+
+.form-stuff {
+  width: 100%;
+  height: 170px;
+  border: 1px solid #ADADAD;
+  background-color: rgba(245, 245, 247, 0.5);
+  top: 50px;
+  position: relative;
+  border-radius: 15px;
+  padding-top: 20px; }
+
+h2, h3, p {
+  text-align: center;
+  width: 100%; }
+
+.origin-city, .destination-city {
+  color: red;
+  font-size: 300%; }
+
+.origin-city, .destination-city, .date-range {
+  font-weight: strong !important;
+  opacity: 1; }
+
+.search-flight {
+  top: 400px;
+  left: -470px;
+  position: absolute;
+  font-size: 130%;
+  color: #EDF2D0; }
+
+.date-range {
+  font-size: 200%; }
+
+.label {
+  font-size: 90%;
+  text-transform: uppercase;
+  color: #7A797A; }
+
+.pick-new-city {
+  height: 90px;
+  width: 150px;
+  background-color: blue;
+  position: absolute;
+  left: 420px;
+  top: 50px;
+  z-score: 1000;
+  color: white;
+  display: none; }
+
+body {
+  background-image: url("images/skyline.jpg");
+  background-size: 100%, 100%; }
+
+/*# sourceMappingURL=exitunit.css.map */
