@@ -16,15 +16,16 @@ display:none;
 .nbs-flexisel-container {
     position:relative;
     max-width:100%;
-    bottom:-250px;
+    bottom:-220px;
 
 }
 .nbs-flexisel-ul {
     position:relative;
     width:9999px;
-    height:150px;
+    height:180px;
     margin:0px;
     padding:0px;
+    padding-top:30px;
     list-style-type:none;   
     text-align:center;  
 }
@@ -33,14 +34,9 @@ display:none;
     overflow:hidden;
     float:left;
     width:100%;
-    background:(252, 252, 252, 0.5);
-    background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
-    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); /* Chrome,Safari4+ */
-    background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
-    background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
-    background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
-    background: #fcfcfc linear-gradient(top, #fcfcfc 0%, #eee 100%); /* W3C */
-    border:1px solid #ccc;
+    background-color:#50615B;
+    
+    border:1px solid black;
     border-radius:5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;  
@@ -59,7 +55,7 @@ display:none;
     width: 100%;
     cursor: pointer;
     position: relative;
-    border:2px #ADADAD solid;
+
     margin-top: 10px;
     margin-bottom: 10px;
     max-width:200px;
@@ -80,10 +76,10 @@ display:none;
 
 .nbs-flexisel-nav-left {
     left: 10px;
-    background: url(../images/button-previous.png) no-repeat;
+    background: url(../images/left-arrow5.png) no-repeat;
 }
 
 .nbs-flexisel-nav-right {
     right: 5px;
-    background: url(../images/button-next.png) no-repeat;
+    background: url(../images/right-arrow5.png) no-repeat;
 }

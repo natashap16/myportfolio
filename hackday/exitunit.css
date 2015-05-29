@@ -16,46 +16,52 @@ a {
 .form-stuff {
   width: 100%;
   height: 170px;
-  border: 1px solid #ADADAD;
-  background-color: rgba(245, 245, 247, 0.5);
-  top: 50px;
+  top: 20px;
   position: relative;
   border-radius: 15px;
   padding-top: 20px; }
 
 h2, h3, p {
-  text-align: center;
+  left: 100px;
   width: 100%; }
 
 .origin-city, .destination-city {
-  color: red;
+  color: #612C09;
   font-size: 300%; }
 
-.origin-city, .destination-city, .date-range {
+.origin-city, .destination-city, .date-range, .num-travelers {
   font-weight: strong !important;
-  opacity: 1; }
+  opacity: 1;
+  background-color: rgba(245, 245, 247, 0.6);
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  border: 1px #e6e6e7 solid; }
 
 .search-flight {
-  top: 400px;
-  left: -470px;
+  top: 408px;
+  left: 172px;
   position: absolute;
   font-size: 130%;
-  color: #EDF2D0; }
+  color: #EDF2D0;
+  z-index: 1000; }
 
 .date-range {
   font-size: 200%; }
 
+.num-travelers {
+  font-size: 150%; }
+
 .label {
   font-size: 90%;
   text-transform: uppercase;
-  color: #7A797A; }
+  color: #3B3A3B; }
 
 .pick-new-city {
   height: 90px;
   width: 150px;
   background-color: blue;
   position: absolute;
-  left: 420px;
+  left: 120px;
   top: 50px;
   z-score: 1000;
   color: white;
